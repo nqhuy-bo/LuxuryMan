@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#32E4E2E2"
+    tools:context=".TrangChuActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:background="@color/While"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUXURY MEN"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/bangers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_marginTop="40dp"
+            android:id="@+id/imageViewTimKiem">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/relative">
+    <ScrollView
+        android:id="@+id/viewContent"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/llBanner"
+        layout="@layout/layout_banner"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"/>
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="#00FFFFFF"
+
+        />
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+
+   <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:mbn_backgroundBottomColor="#ffff"
+        app:mbn_countBackgroundColor="#673AB7"
+        app:mbn_selectedIconColor="#2196F3"
+        android:layout_alignParentBottom="true"
+
+
+
+        >
+       <RelativeLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           >
+       <androidx.cardview.widget.CardView
+           android:id="@+id/trangchusoluongtang"
+           app:cardElevation="10dp"
+           android:layout_marginLeft="5sp"
+           android:layout_marginRight="5sp"
+           android:layout_marginBottom="5sp"
+           android:layout_width="18dp"
+           android:layout_height="18dp"
+           app:cardBackgroundColor="#BEEC3434"
+           android:layout_marginTop="15dp"
+           android:layout_marginEnd="130dp"
+
+           android:layout_alignParentRight="true"
+           app:cardCornerRadius="8dp"
+           >
+
+               <TextView
+                   android:id="@+id/trangchusoluong"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="0"
+                   android:textColor="@color/While"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="5dp"
+
+                   >
+
+               </TextView>
+
+       </androidx.cardview.widget.CardView>
+</RelativeLayout>
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+
+</RelativeLayout>
+
+
+

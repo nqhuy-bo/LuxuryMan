@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimKiemActivity">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+
+
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/imageViewQuayLai"
+            android:layout_margin="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/quaylai"
+            >
+        </ImageView>
+        <SearchView
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/khung"
+            android:queryHint="Tìm Kiếm"
+            android:id="@+id/search_vew"
+            />
+        <ImageButton
+
+            android:id="@+id/ImageButtonMic"
+            android:layout_width="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mic"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            >
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion key"
+                android:textSize="16sp"/>
+            <me.gujun.android.taggroup.TagGroup
+                android:padding="8dp"
+                android:id="@+id/tag_group"
+                app:atg_borderColor="@color/colorPrimary"
+                app:atg_textColor="@color/colorPrimary"
+                style="@style/TagGroup" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/lottieKhongTimThay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            tools:ignore="MissingConstraints"
+            app:lottie_rawRes="@raw/kotimhay"
+            android:visibility="invisible"
+
+
+            />
+        <TextView
+            android:id="@+id/textViewKhongTimThay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không tìm thấy sản phẩm"
+            android:textSize="25sp"
+            android:fontFamily="@font/bangers"
+            android:layout_margin="60dp"
+            android:textColor="#ED0B0B"
+            android:visibility="invisible"
+            >
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

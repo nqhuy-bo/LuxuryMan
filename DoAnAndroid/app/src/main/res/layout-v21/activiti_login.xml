@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:context=".DangNhapActivity"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/hinh1111"
+    >
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_image"
+        android:id="@+id/text_luxury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUXURY MAN"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bangers"
+
+        android:transitionName="logo_text"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+       />
+
+
+
+<RelativeLayout
+    android:id="@+id/retive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/text_luxury"
+    android:layout_marginTop="20dp"
+    android:visibility="visible"
+    >
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/et_ui"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+
+            android:transitionName="logo_textLogin"
+            android:id="@+id/text_singIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:text="Đăng nhập vào Luxury Man"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:transitionName="phone_tran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/editTextSoDienThoaiWelcome1"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:transitionName="pass_tran"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu"
+            app:passwordToggleEnabled="true"
+           android:textColorHint="@color/black"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/editTextMatKhauWelcome1"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="18dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.facebook.login.widget.LoginButton
+
+            android:id="@+id/buttonFaceBookWelcome"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/facebook"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+
+
+        />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+    <FrameLayout
+        android:transitionName="login_tran"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonDangNhapWelcome"
+        android:background="@drawable/bt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/retive"
+        android:elevation="5dp"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signInText"
+            android:textSize="18sp"
+            android:textColor="@color/While"
+            android:text="Đăng nhập"
+            android:fontFamily="@font/bangers"
+            android:layout_gravity="center"
+            >
+        </TextView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:indeterminateTint="#FFFFFF"
+
+            />
+    </FrameLayout >
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonDangNhapWelcome"
+        android:background="@color/While"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/divider2"
+        android:id="@+id/buttonDangKiWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký ngay"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bangers"
+        android:transitionName="logo_text1"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        />
+
+
+
+
+</RelativeLayout>

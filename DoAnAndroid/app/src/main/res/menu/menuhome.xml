@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu1"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Menu 1"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/menu2"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="Menu 2"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/menu3"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Menu3"
+        app:showAsAction="collapseActionView" />
+</menu>

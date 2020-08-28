@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DoAnAndroid</string>
+    <string name="dangnhap">ĐĂNG NHẬP</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="welcome">Welcome</string>
+    <string name="or">or</string>
+    <string name="dangkingay">Đăng kí</string>
+    <string name="google">GOOGLE</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="luxuryman">LUXURY MAN</string>
+    <string name="admin">Admin</string>
+    <string name="facebook_app_id">988973301519254</string>
+    <string name="hoten">Họ Tên</string>
+    <string name="kiemtradon">Kiểm tra đơn hàng</string>
+    <string name="todo">TODO</string>
+    <string name="quaylai">Quay lại</string>
+    <string name="trangchu">Trang chủ</string>
+    <string name="danhmuc">Danh mục</string>
+    <string name="menu3">Menu 3</string>
+    <string name="menu4">Menu 4</string>
+    <string name="sodienthoai">Số điện thoại</string>
+    <string name="giohangtrong">Giỏ hàng bạn đang trống</string>
+    <string name="tongtien">Tổng tiền : </string>
+    <string name="giatri">Giá Trị</string>
+    <string name="thanhtoan">THANH TOÁN </string>
+    <string name="tieptucmua">TIẾP TỤC MUA HÀNG</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

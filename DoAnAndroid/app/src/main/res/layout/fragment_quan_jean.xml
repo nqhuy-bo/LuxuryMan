@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frament.QuanJeanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/viewContent"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textViewTenLoaiSanPhamBanChay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sản phẩm bán chạy"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewSanPhamBanChay"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewTenLoaiSanPhamMoi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sản phẩm mới"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewSanPhamMoi"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewTenLoaiSanPhamQuanDai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Quần thời trang"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewSanPhamQuanDai"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

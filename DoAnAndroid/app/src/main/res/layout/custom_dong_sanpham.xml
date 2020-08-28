@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="5dp"
+
+
+    >
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF0909"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginBottom="5sp"
+    app:cardBackgroundColor="#FFFDFD"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageViewItemGioHang"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/imageViewItemGioHang"
+        android:layout_marginTop="8dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/textViewTenSPGioHang"
+            android:layout_marginTop="4dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/textViewGiaGioHang"
+            android:layout_marginTop="4dp"
+
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="180dp"
+            android:layout_height="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/textViewSoLuongGioHang"
+            android:text="Số lượng"
+            android:layout_gravity="center"
+            android:textColor="#111111"
+            android:layout_width="180dp"
+            android:layout_height="30sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/ImageXoaSPGioHang"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/trash"
+        />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

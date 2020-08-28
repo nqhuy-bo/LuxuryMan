@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:parentActivityName=".TrangChuActivity"
+   >
+
+
+    <ImageView
+        android:id="@+id/imageViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewQuayLai"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/comback"
+
+        android:layout_alignParentLeft="true"
+   />
+
+    <ImageView
+
+        android:id="@+id/imageViewMenu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/dot"
+        android:layout_alignParentRight="true" />
+
+
+
+    <ImageView
+        android:id="@+id/imageViewGioHang"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+
+        android:background="@drawable/addshopping"
+        android:layout_alignParentRight="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/daitalsoluongtang"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:cardBackgroundColor="#EC3434"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="65dp"
+
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="8dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/daitelsoluong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/While"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+
+                >
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_below="@+id/imageViewDetail"
+        android:id="@+id/textViewGiaDetail"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="TextView"
+        android:textColor="#D50000"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewTenDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_margin="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        android:layout_below="@+id/textViewGiaDetail"
+
+       />
+
+    <TextView
+        android:id="@+id/textViewMoTaDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        android:layout_below="@+id/textViewTenDetail"
+        android:layout_marginBottom="40dp"
+
+        />
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                app:cardBackgroundColor="#F8F4F4"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@+id/textViewMoTaDetail"
+                android:id="@+id/cardView"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Số lượng :"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/antic"
+                        android:textSize="30sp"
+                        />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonCongDetail"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/add"
+                            android:layout_marginRight="8dp"/>
+
+                        <TextView
+                            android:id="@+id/editTextSoLuongDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="0"
+                            android:textColor="#111111"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonTruDetail"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="12dp"
+
+                            android:background="@drawable/minus" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/buttonMuaNgayDetail"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btvuong"
+                        android:text="Mua Ngay"
+                        android:textSize="16sp"
+                        android:textColor="@color/While"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+
+                        />
+                    <Button
+                        android:id="@+id/buttonThemVaoGioDetail"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btvuong"
+                        android:textSize="16sp"
+                        android:text="Thêm vào
+                                      giỏ hàng"
+                        android:textColor="@color/While"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

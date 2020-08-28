@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EF0909"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="#FFFDFD"
+        app:cardCornerRadius="10dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
+
+
+
+
+            <ImageView
+                android:id="@+id/imgHinhAnh_sphot"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bt"
+                android:layout_marginBottom="6dp"
+
+                />
+
+
+            <ImageView
+                android:layout_marginTop="-15dp"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/sanphamhot"
+
+                />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgHinhAnh_sphot"
+                android:id="@+id/txtSanPham_sphot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtSanPham_sphot"
+                android:id="@+id/txtGia_sphot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#FF0707"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

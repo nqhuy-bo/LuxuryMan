@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frament.DonHangChoDuyetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/imageViewQuayLaiSPChoDuyet"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/comback"/>
+    <TextView
+        android:id="@+id/textViewTitleDonHangDangCho"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+
+        android:text="Sản phẩm chờ duyệt"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewSanPhamChoDuyet"
+        android:layout_width="match_parent"
+        android:layout_height="634dp"
+        android:layout_marginTop="100dp" />
+</FrameLayout>

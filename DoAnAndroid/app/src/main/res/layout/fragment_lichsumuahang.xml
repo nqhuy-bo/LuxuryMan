@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frament.LichSuMuaHangFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/imageViewQuayLaiLichSuMuaHang"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/comback"/>
+        <TextView
+            android:id="@+id/textViewTitleLichSuMuaHang"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:text="Các sản phẩm đã mua"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewLichSuMuaHang"
+        android:layout_width="match_parent"
+        android:layout_height="634dp"
+        android:layout_marginTop="100dp" />
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarGioHang"
+        app:title="Giỏ hàng"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                tools:ignore="MissingConstraints"
+                app:lottie_rawRes="@raw/shop"
+                android:layout_marginBottom="60dp"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listViewGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+
+                />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginBottom="80dp"
+        android:id="@+id/textViewTrangThaiGioHang"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giohangtrong"
+        android:textColor="#000000"
+        android:textSize="26sp"/>
+    <LinearLayout
+        android:id="@+id/thanhtoangiohang"
+        android:background="@color/While"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/textViewTongTien"
+            android:text="@string/tongtien"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/bangers"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewGiaTri"
+            android:text="@string/giatri"
+            android:fontFamily="@font/bangers"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat" />
+        <Button
+            android:id="@+id/buttonThanhToanGioHang"
+            android:text="@string/thanhtoan"
+            android:textSize="18sp"
+            android:textColor="@color/While"
+            android:fontFamily="@font/bangers"
+            android:background="@drawable/btvuong"
+            android:layout_width="150dp"
+           android:layout_margin="8dp"
+
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

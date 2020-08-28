@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EF0909"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="#FFFDFD"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageViewItemGioHangDangCho"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@color/black"
+                />
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_toRightOf="@+id/imageViewItemGioHangDangCho"
+                android:layout_marginTop="8dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/textViewTenSPGioHangDangCho"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/textViewGiaGioHangDangCho"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="180dp"
+                    android:layout_height="20sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/textViewSoLuongGioHangDangCho"
+                    android:text="Số lượng"
+                    android:layout_gravity="center"
+                    android:textColor="#111111"
+                    android:layout_width="180dp"
+                    android:layout_height="30sp"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/textViewDangCho"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:paddingTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Đang chờ ..."
+                android:textColor="#111111" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

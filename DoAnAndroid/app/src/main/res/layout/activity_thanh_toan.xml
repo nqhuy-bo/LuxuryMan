@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:context=".ThanhToanActivity"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/hinh1111"
+    >
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_image"
+        android:id="@+id/text_luxury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUXURY MAN"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bangers"
+
+        android:transitionName="logo_text"
+        android:textColor="@color/While"
+        android:textSize="40sp"
+
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/retive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/text_luxury"
+        android:layout_marginTop="-20dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="386dp"
+            android:layout_height="522dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/et_ui"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+
+                android:id="@+id/text_singIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/antic"
+                android:text="Điền thông tin thanh toán"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:transitionName="logo_textLogin" />
+
+            <TextView
+
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:text="Tên người nhận hàng"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:transitionName="logo_textLogin" />
+
+            <EditText
+                android:id="@+id/editTextTenNguoiNhanHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hoten"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:text="Số điện thoại khi giao hàng"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:transitionName="logo_textLogin" />
+
+            <EditText
+                android:id="@+id/editTextSoDienThoaiNguoiNhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sodienthoai"
+                android:textSize="26sp" />
+
+
+            <TextView
+
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:text="Địa chỉ nhận hàng"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:transitionName="logo_textLogin" />
+
+            <EditText
+                android:id="@+id/editTextDiaChiNhanHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ nhận hàng"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:text="Tổng tiền cần tính"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:transitionName="logo_textLogin" />
+
+            <EditText
+                android:id="@+id/editTextTongTienThanhToan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tongtien"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonXacNhanDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Xác nhận đơn hàng" />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
